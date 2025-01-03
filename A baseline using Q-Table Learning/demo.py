@@ -5,7 +5,7 @@ from gym import wrappers
 from time import time
 
 # 创建 Breakout 环境
-env = gym.make("Breakout-v4", render_mode="human", frameskip=15)
+env = gym.make("Breakout-v4", frameskip=15)
 
 # 使用 Monitor 进行视频录制
 #env = wrappers.RecordVideo(env, './videos/' + str(int(time())) + '/', name_prefix='DaZhuanKuai', episode_trigger=lambda episode_id: True)
